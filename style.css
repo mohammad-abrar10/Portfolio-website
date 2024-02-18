@@ -1,10 +1,11 @@
 @import url(./strap.css);
+@import url(./hover.css);
 
 .wrapper{
   width: 100vw;
   min-height:400vh;
   box-sizing: border-box;
-  background: rgb(224, 224, 224);
+  background: rgb(229, 222, 222);
 }
 /* ===========================================Ist section==================================================== */
 /* header */
@@ -65,6 +66,7 @@
 .social-container a i{
   color: black;
   font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
 }
 .social-container span{
   height: 13vh;
@@ -127,8 +129,117 @@ height:66vh;
   width: 0px;
   border: 2px solid black;
   margin: 3vh 0;
-  
 }
 
+/* ===========================================2nd section==================================================== */
+.secound-section{
+  width: 90vw;
+  min-height: 40vh;
+  margin: 3vw auto;
+}
+.side-bar{
+  width: 10%;
+}
+.side-bar-text{
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+.side-bar-text h3{
+  position: absolute;
+  top: 10vh;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transform: rotate(90deg);
+}
+.side-bar-text span{
+  position: absolute;
+  top: 18vh;
+  height: 8vh;
+  border: 2px solid black;
+  margin-top: 4vh;
+}
+/* mid secound section */
+.mid-secound{
+  width: 40%;
+  flex-direction: column;
+  position: relative;
+}
+.mid-secound h1{
+  position: absolute;
+  top: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-top: 2vw;
+  padding-left: 1vw;
+}
+.mid-secound p{
+  position: absolute;
+  top: 10vh;
+  padding-left: 1vw;
+  color: rgb(108, 108, 108);
+}
+/* right secound section */
+.right-side{
+  width: 60%;
+}
+.right-side p{
+  padding: 2vw;
+  color: rgb(108, 108, 108);
+}
+.right-side p span{
+  text-transform: capitalize;
+  font-weight: 800;
+  color: rgb(37, 37, 37);
+}
+/* ===========================================third section==================================================== */
+.third-section{
+  width: 90vw;
+  min-height: 40vh;
+  margin: 3vw auto;
+}
+.mid-secound h2{
+  position: absolute;
+  top: 2.5vw;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-top: 2vw;
+  padding-left: 1vw;
+}
+.mid-secound .p-text{
+  position: absolute;
+  top: 8vw;
+}
+/* skills container */
+.skills-container{
+  justify-content: center;
+}
+.skills-container ul{
+  display: grid;
+  grid: 50px 50px 50px / 50px 50px 50px 50px 50px;
+  gap: 2vw;
+}
+.skills-container ul li{
+  list-style: none;
+}
+.skills-container ul li i{
+  font-size: 2rem;
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  background-clip: text;
+  color: transparent;
+}
+/* ===========================================fourth section==================================================== */
+.works-container {
+  margin-top: 2vw;
+  display: grid;
+  grid: auto auto auto / auto auto auto;
+
+}
+.works-container img{
+  height: 12vw;
+  width: 10vw;
+}
 
 
